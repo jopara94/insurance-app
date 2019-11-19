@@ -4,10 +4,8 @@
 
   <ul>
     {% for dependent in dependents %}
-    <li>
-      <a href="{% url 'dependent_detail' pk=dependent.pk %}"
-        >{{ dependent.first_name }}</a
-      >
+    <li class="firstName">
+      <a href="{% url 'dependent_detail' pk=dependent.pk %}">{{ dependent.first_name }}</a>
     </li>
     {% endfor %}
   </ul>

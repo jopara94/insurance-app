@@ -4,10 +4,8 @@
   <h5><a href="{% url 'member_create' %}">Add a Member</a></h5>
   <ul>
     {% for member in members %}
-    <li>
-      <a href="{% url 'member_detail' pk=member.id %}"
-        >{{ member.first_name }}</a
-      >
+    <li class="firstName">
+      <a href="{% url 'member_detail' pk=member.id %}">{{ member.first_name }}</a>
     </li>
     {% endfor %}
   </ul>

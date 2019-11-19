@@ -9,10 +9,9 @@
   </h4>
   <ul>
     {% for dependent in member.dependents.all %}
-    <li>
+    <li class="firstName">
       <a href="{% url 'dependent_detail' pk=dependent.pk %}"
-        >{{ dependent.first_name }} {{ dependent.last_name }}</a
-      >
+        >{{ dependent.first_name }} {{ dependent.last_name }}</a>
     </li>
     {% endfor %}
   </ul>
