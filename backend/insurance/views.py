@@ -83,3 +83,7 @@ def dependent_edit(request, pk):
 def dependent_delete(request, pk):
     Dependent.objects.get(id=pk).delete()
     return redirect('dependent_list')
+
+
+def about(request):
+    return render(request, 'insurance/about.html')

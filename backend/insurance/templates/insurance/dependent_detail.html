@@ -1,7 +1,9 @@
 {% extends 'insurance/base.html' %}
 
 {% block content %}
-    <h2>{{ dependent.first_name }} <a href="{% url 'dependent_edit' pk=dependent.pk %}">Edit Info</a></h2>
+    <h2>{{ dependent.first_name }}</h2>
+    <h4><a href="{% url 'dependent_edit' pk=dependent.pk %}">Edit Info</a></h4>
+    <h4><a href="{% url 'dependent_delete' pk=dependent.pk %}">Delete</a></h4>
     <h3>Insured By: {{ dependent.member.first_name }}</h3>
 
     Relation to Insured: {{ dependent.relationship }}
