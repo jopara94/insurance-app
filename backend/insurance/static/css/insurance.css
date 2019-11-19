@@ -1,136 +1,144 @@
 html {
-    background: url(https://www.findlaymission.org/uploads/1/2/2/8/122897672/published/bw-hands-circle-elderly_1.jpg?1549373852);
-    background-size: cover;
+  background: url(https://www.connect.media/wp-content/uploads/2019/01/texas-medical-center.jpg);
+  background-size: cover;
 }
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    max-width: 50em;
-    margin: auto;
-    padding: 2em 1em;
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 50em;
+  margin: auto;
+  padding: 2em 1em;
+}
+
+section {
+  display: inline;
+}
+
+.button {
+  text-align: left;
 }
 
 .depBG {
-    background: rgba(212, 175, 55, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.8);
-    margin-top: 20px;
-    border-radius: 10px;
+  background: rgba(212, 175, 55, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .addBG {
-    background: rgba(212, 175, 55, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.8);
-    margin-top: 20px;
-    border-radius: 10px;
+  background: rgba(212, 175, 55, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .abtBG {
-    background: rgba(212, 175, 55, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.8);
-    margin-top: 20px;
-    border-radius: 10px;
+  background: rgba(212, 175, 55, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .homeBG {
-    background: rgba(212, 175, 55, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.8);
-    margin-top: 20px;
-    border-radius: 10px;
+  background: rgba(212, 175, 55, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .firstName {
-    border: 2px solid rgba(0, 0, 0, 0.8);
-    display: inline-block;
-    border-radius: 5px;
-    background-color: whitesmoke;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  border-radius: 5px;
+  background-color: whitesmoke;
 }
 
 .newMemBG {
-    background: rgba(212, 175, 55, 0.8);
-    border: 1px solid rgba(212, 175, 55, 0.8);
-    margin-top: 20px;
-    border-radius: 10px;
+  background: rgba(212, 175, 55, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .heading {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .circle {
-    size: 30px;
+  color: whitesmoke;
 }
 
 nav {
-    background-color: #eeeeee;
-    color: black;
-    text-align: center;
-    align-content: flex-start;
-    border-radius: 50px;
+  background-color: #eeeeee;
+  color: black;
+  text-align: center;
+  align-content: flex-start;
+  border-radius: 50px;
 }
 
-aside a {
-    border: 1px solid black;
-    margin: .5em;
-    padding: .5em;
-    background-color: #eeeeee;
+nav a {
+  border: 0.01px solid black;
+  margin: .15em;
+  padding: .15em;
+  background-color: #eeeeee;
 }
 
 aside a:hover {
-    background-color: orange;
-    color: blue;
+  background-color: orange;
+  color: blue;
 }
 
 a,
 a:visited {
-    text-decoration: none;
-    color: rgba(0, 50, 0, 0.8);
+  text-decoration: none;
+  color: rgba(0, 50, 0, 0.8);
 }
 
 a:hover {
-    background-color: orange;
+  background-color: orange;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    margin: .25em;
+  margin: 0.25em;
 }
 
 h1 {
-    font: inherit;
-    color: inherit;
-    letter-spacing: -.05em;
-    text-decoration: none;
-    border-bottom: 1px solid black;
+  font: inherit;
+  color: inherit;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 input {
-    display: block;
-    margin: 5px 0 20px 0;
-    padding: 9px;
-    border: solid 1px black;
-    width: 300px;
-    background: whitesmoke;
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 9px;
+  border: solid 1px black;
+  width: 300px;
+  background: whitesmoke;
 }
 
-input[type=submit],
+input[type="submit"],
 a.delete {
-    width: auto;
-    padding: 9px 15px;
-    background-color: gray;
-    border: 0;
-    font-size: 14px;
-    color: #FFFFFF;
+  width: auto;
+  padding: 9px 15px;
+  background-color: gray;
+  border: 0;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .delete {
-    color: red;
-    display: inline-block;
+  color: red;
+  display: inline-block;
 }
 
-
 .user-info {
-    float: right;
+  float: right;
 }
