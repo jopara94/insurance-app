@@ -13,5 +13,7 @@ urlpatterns = [
     path('dependents/<int:pk>', views.dependent_detail, name='dependent_detail'),
     path('dependents/new', views.dependent_create, name='dependent_create'),
     path('dependents/<int:pk>/edit', views.dependent_edit, name='dependent_edit'),
-    path('dependents/<int:pk>/delete', views.dependent_delete, name='dependent_delete')
+    path('dependents/<int:pk>/delete', views.dependent_delete, name='dependent_delete'),
+    
+    path('about', views.about, name="about"),
 ]

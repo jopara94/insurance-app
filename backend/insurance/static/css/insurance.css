@@ -1,16 +1,64 @@
+html {
+    background: url(https://www.findlaymission.org/uploads/1/2/2/8/122897672/published/bw-hands-circle-elderly_1.jpg?1549373852);
+    background-size: cover;
+}
+
 body {
     font-family: 'Helvetica Neue', sans-serif;
     max-width: 50em;
     margin: auto;
     padding: 2em 1em;
-    background: url(/Users/jamesopara/Desktop/dev/sandbox/python/insurance-app/backend/images/hand_circle.jpg);
-    background-size: cover;
 }
 
-aside {
+.depBG {
+    background: rgba(212, 175, 55, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.8);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.addBG {
+    background: rgba(212, 175, 55, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.8);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.abtBG {
+    background: rgba(212, 175, 55, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.8);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.homeBG {
+    background: rgba(212, 175, 55, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.8);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.newMemBG {
+    background: rgba(212, 175, 55, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.8);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 1.5em;
+}
+
+.circle {
+    size: 30px;
+}
+
+nav {
     background-color: #eeeeee;
     color: black;
     text-align: center;
+    align-content: flex-start;
+    border-radius: 50px;
 }
 
 aside a {
@@ -28,11 +76,11 @@ aside a:hover {
 a,
 a:visited {
     text-decoration: none;
-    color: blue;
+    color: rgba(0, 50, 0, 0.8);
 }
 
 a:hover {
-    background-color: #ccc;
+    background-color: orange;
 }
 
 ul {
@@ -49,10 +97,6 @@ h1 {
     letter-spacing: -.05em;
     text-decoration: none;
     border-bottom: 1px solid black;
-}
-
-h2>a {
-    font-size: .75em;
 }
 
 input {
@@ -74,8 +118,9 @@ a.delete {
     color: #FFFFFF;
 }
 
-a.delete {
-    background-color: red;
+.delete {
+    color: red;
+    display: inline-block;
 }
 
 

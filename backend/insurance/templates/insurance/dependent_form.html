@@ -1,8 +1,11 @@
 {% extends 'insurance/base.html' %} {% block content %}
-<h1>Add to Your Circle</h1>
-<form method="POST" class="dependent-form">
-    {% csrf_token %} {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Save</button>
-    
-</form>
+<div class="addBG">
+    <h1 class="heading">Add to Your Circle</h1>
+    <form method="POST" class="dependent-form">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+
+    </form>
+</div>
+
 {% endblock %}

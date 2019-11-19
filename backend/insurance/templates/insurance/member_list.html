@@ -1,13 +1,16 @@
-{% extends 'insurance/base.html' %}
+{% extends 'insurance/base.html' %} {% block content %}
+<div class="homeBG">
+  <h2 class="heading">Members</h2>
+  <h5><a href="{% url 'member_create' %}">Add a Member</a></h5>
+  <ul>
+    {% for member in members %}
+    <li>
+      <a href="{% url 'member_detail' pk=member.id %}"
+        >{{ member.first_name }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
-{% block content %}
-    <h2>Members</h2>
-    <h5><a href="{% url 'member_create' %}">Add a Member</a></h5>
-    <ul>
-        {% for member in members %}
-            <li>
-                <a href="{% url 'member_detail' pk=member.id %}">{{ member.first_name }}</a>
-            </li>
-        {% endfor %}
-    </ul>
 {% endblock %}

@@ -1,16 +1,21 @@
-{% extends 'insurance/base.html' %}
+{% extends 'insurance/base.html' %} {% block content %}
+<div class="addBG">
+  <h2 class="heading">{{ member.first_name }}</h2>
+  <h4>Insured</h4>
 
-{% block content %}
-    <h2>{{ member.first_name }}</h2>
-    <h4>Insured</h4>
-    
+  <h4>
+    Your Circle
+    <a href="{% url 'dependent_create' %}">(Add People to Your Circle)</a>
+  </h4>
+  <ul>
+    {% for dependent in member.dependents.all %}
+    <li>
+      <a href="{% url 'dependent_detail' pk=dependent.pk %}"
+        >{{ dependent.first_name }} {{ dependent.last_name }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
-    <h4>Your Circle <a href="{% url 'dependent_create' %}">(Add People to Your Circle +)</a></h4>
-    <ul>
-        {% for dependent in member.dependents.all %}
-            <li>
-                <a href="{% url 'dependent_detail' pk=dependent.pk %}">{{ dependent.first_name }} {{ dependent.last_name }}</a>
-            </li>
-        {% endfor %}
-    </ul>
 {% endblock %}
