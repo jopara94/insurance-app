@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Your Circle Insurace</title>
+    <link rel="stylesheet" href="static/css/insurace.css" />
+  </head>
+  <body>
+    <h1>Your Circle Insurace</h1>
+    <aside>
+      <ul>
+        <li><a href="{% url 'member_list' %}">Home</a></li>
+        <!-- <li><a href="{% url 'dependent_list' %}">Your Circle</a></li> -->
+      </ul>
+    </aside>
+    {% block content %} {% endblock %}
+  </body>
+</html>
